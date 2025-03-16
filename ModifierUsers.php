@@ -17,11 +17,10 @@ if (isset($_POST['send'])) {
         $login = $_POST['login'];
         $password = $_POST['password'];
 
-        // Gestion de l'upload du fichier
         $uploadchemin = 'uploads/'; // Dossier où les images seront stockées
         $uploadFile = $uploadchemin . basename($_FILES['profile']['name']);
 
-        // Déplacer le fichier téléchargé vers le dossier "uploads"
+        // Déplacer le fichier téléchargé vers le dossier uploads
         if (move_uploaded_file($_FILES['profile']['tmp_name'], $uploadFile)) {
             // Hacher le mot de passe
             $hash = password_hash($password, PASSWORD_DEFAULT);
