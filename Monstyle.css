@@ -8,8 +8,7 @@
     --danger-color: #dc2626;
     --success-color: #059669;
   }
-  
-  /* Reset et styles de base */
+ 
   * {
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@
     padding: 2rem;
   }
   
-  /* Styles communs */
+  
   h1 {
     color: var(--text-color);
     text-align: center;
@@ -33,7 +32,7 @@
     font-weight: 600;
   }
   
-  /* Styles des formulaires */
+ 
   form {
     max-width: 500px;
     margin: 0 auto;
@@ -71,7 +70,7 @@
     background-color: var(--primary-hover);
   }
   
-  /* Styles de la table */
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -97,7 +96,6 @@
     background-color: #f8fafc;
   }
   
-  /* Styles des images dans la table */
   .image img {
     width: 24px;
     height: 24px;
@@ -109,7 +107,7 @@
     transform: scale(1.1);
   }
   
-  /* Styles des liens */
+
   .link_container {
     margin-bottom: 2rem;
   }
@@ -134,7 +132,7 @@
     background-color: var(--primary-hover);
   }
   
-  /* Message d'erreur ou succès */
+  
   .message {
     text-align: center;
     padding: 1rem;
@@ -144,14 +142,14 @@
     color: var(--danger-color);
   }
   
-  /* Style pour l'image de profil dans la table */
+
   td img[alt="Profile"] {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--border-color);
   }
   
-  /* Responsive design */
+
   @media (max-width: 768px) {
     body {
       padding: 1rem;
